@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Sprout Innovations</title>
+    
+    <!-- Favicon de la aplicación -->
+    <link rel="icon" href="assets/images/logos/logo-startup.png" type="image/png">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Estilos generales de la página -->
+    <link rel="stylesheet" href="css/fonts.css"> <!-- Fuentes personalizadas -->
+    
+    <!-- Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/63a734d1c2.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <!-- Barra de navegación principal -->
+    <nav class="navbar">
+        <!-- Contenedor de logo y título -->
+        <div class="navbar-logo">
+            <img src="assets/images/logos/logo-app.png" alt="Logo EcoCrop" class="navbar-logo-img">
+            <h1 class="navbar-title">EcoCrop</h1>
+        </div>
+
+        <!-- Enlaces de navegación principales -->
+        <ul class="navbar-links">
+            <li><a href="#home" class="navbar-link">Inicio</a></li>
+            <li><a href="#how-does-it-work" class="navbar-link">Cómo funciona</a></li>
+            
+            <!-- Menú desplegable para la sección de Servicios -->
+            <li class="navbar-item-dropdown">
+                <a href="#services" class="navbar-link">Servicios<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="navbar-sublinks">
+                    <li><a href="#products" class="navbar-sublink">Ver productos</a></li>
+                    <li><a href="#chat" class="navbar-sublink">Chat</a></li>
+                    <li><a href="#climate" class="navbar-sublink">Clima</a></li>
+                    <li><a href="#news" class="navbar-sublink">Noticias</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#about" class="navbar-link">Sobre nosotros</a></li>
+            <li><a href="#contact" class="navbar-link">Contáctanos</a></li>
+        </ul>
+
+        <!-- Botón de unión en la barra de navegación -->
+        <div class="navbar-button">
+            <button class="navbar-join-button">Únete</button>
+        </div>
+    </nav>
+    
+    <!-- SECCIÓN DE INICIO -->
+    <section id="home" class="home-container">
+        <div class="home-content">
+            <h2 class="title-home">Protege tus Cultivos con EcoCrop: <span>Detección Inteligente de Plagas</span></h2>
+            <p class="text-home">
+                EcoCrop es una solución innovadora que utiliza inteligencia artificial para detectar plagas en los cultivos de  forma temprana. Ayuda a los agricultores a tomar decisiones rápidas, reducir costos y promover prácticas     agrícolas sostenibles, protegiendo así la salud de sus tierras. 
+            </p>
+            <button class="start-button button-home">
+                <svg viewBox="30 336.7 120.9 129.2" width="30">
+                    <path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z">
+                    </path>
+                    <path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z">
+                    </path>
+                    <path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z">
+                    </path>
+                    <path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z">
+                    </path>
+                </svg>
+                <span>Obtener</span>
+            </button>
+        </div>
+        <div class="home-image">
+            <video autoplay loop muted playsinline>
+                <source src="assets/images/home/video/video_home.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CÓMO FUNCIONA -->
+    <section id="how-does-it-work" class="how-function-container">
+        <h2 class="how-function-title">¿Cómo funciona EcoCrop?</h2>
+        
+        <div class="how-function-content">
+            <!-- Paso 1: Captura de imagen -->
+            <div class="step-container step-one">
+                <div class="step-circle">1</div>
+                <div class="step-info">
+                    <span class="step-title">Captura de imagen</span>
+                    <p class="step-description">
+                        Desde EcoCrop toma una foto de la planta afectada o carga una imagen desde tu galería.
+                    </p>
+                </div>
+                <div class="step-image"></div>           
+            </div>
+            
+            <!-- Paso 2: Análisis automático -->
+            <div class="step-container step-two">
+                <div class="step-circle">2</div>
+                <div class="step-info">
+                    <span class="step-title">Análisis automático</span>
+                    <p class="step-description">
+                        La aplicación utiliza tecnología avanzada de inteligencia artificial para analizar la imagen en tiempo  real.
+                    </p>
+                </div>
+                <div class="step-image"></div>
+            </div>
+            
+            <!-- Paso 3: Detección de plagas -->
+            <div class="step-container step-three">
+                <div class="step-circle">3</div>
+                <div class="step-info">
+                    <span class="step-title">Detección de plagas</span>
+                    <p class="step-description">
+                        EcoCrop identifica el tipo de plaga presente en la planta, proporcionando información precisa y rápida.
+                    </p>
+                </div>
+                <div class="step-image"></div>
+            </div>
+            
+            <!-- Paso 4: Recomendaciones -->
+            <div class="step-container step-four">
+                <div class="step-circle">4</div>
+                <div class="step-info">
+                    <span class="step-title">Recomendaciones</span>
+                    <p class="step-description">
+                        Recibe consejos sobre cómo tratar la plaga detectada y recomendaciones para prevenir futuros problemas.
+                    </p>
+                </div>
+                <div class="step-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="services" class="services-container">
+
+        <div class="content-services">
+            <h2 class="title-services">Servicios</h2>
+
+            <div class="services-content">
+                <div class="card-service card-products">
+                    <div class="triangle triangle-top"><i class="fa-solid fa-store"></i></div>
+                    <div class="triangle triangle-bottom"><i class="fa-solid fa-store"></i></div>
+                    <div class="info-service">
+                        <h3>PRODUCTOS</h3>
+                        <p>Descubre los productos que tenemos para ti.</p>
+                        <a href="#">Ver más<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-service card-chat">
+                    <div class="triangle triangle-top"><i class="fa-solid fa-comments"></i></div>
+                    <div class="triangle triangle-bottom"><i class="fa-solid fa-comments"></i></div>
+                    <div class="info-service">
+                        <h3>CHAT</h3>
+                        <p>Comunícate con otros agricultores y expertos en plagas.</p>
+                        <a href="#">Ver más<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-service card-climate">
+                    <div class="triangle triangle-top"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <div class="triangle triangle-bottom"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <div class="info-service">
+                        <h3>CLIMA</h3>
+                        <p>Consulta el clima de tu región y recibe alertas de condiciones climáticas adversas.</p>
+                        <a href="#">Ver más<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-service card-notices">
+                    <div class="triangle triangle-top"><i class="fa-solid fa-newspaper"></i></div>
+                    <div class="triangle triangle-bottom"><i class="fa-solid fa-newspaper"></i></div>
+                    <div class="info-service">
+                        <h3>NOTICIAS</h3>
+                        <p>Mantente informado sobre las últimas noticias y eventos relacionados con la agricultura.</p>
+                        <a href="#">Ver más<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN DE SOBRE NOSOTROS -->
+    <section id="about" class="about-container">
+        <h2 class="about-title">Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-images">
+                <div class="about-image-container">
+                    <div class="about-image-card card1"></div>
+                    <div class="about-image-card card2"></div>
+                    <div class="about-image-card card3"></div>
+                    <div class="about-image-card card4"></div>
+                    <div class="about-image-card card5"></div>
+                    <div class="about-image-card card6"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>
+                    EcoCrop es una startup que nace con la misión de ayudar a los agricultores a proteger sus cultivos de plagas y enfermedades. Nuestro equipo está formado por expertos en inteligencia artificial, agronomía y desarrollo de aplicaciones móviles, que trabajan juntos para ofrecer una solución innovadora y sostenible.
+                </p>
+                <p>
+                    Creemos que la tecnología puede ser una herramienta poderosa para mejorar la agricultura y promover prácticas agrícolas más sostenibles. Con EcoCrop, queremos contribuir a la seguridad alimentaria y al bienestar de las comunidades rurales, protegiendo la salud de las tierras y fomentando la producción agrícola responsable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL DE TESTIMONIOS -->
+    <section class="testimonials-container">
+        <h2 class="testimonials-title">Testimonios</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial1.jpg" alt="Testimonio 1">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>María López</h3>
+                        <p>"EcoCrop me ha ayudado a identificar una plaga en mis tomates y a tomar medidas rápidas para controlarla. ¡Gracias por esta increíble aplicación!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial2.jpg" alt="Testimonio 2">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>José Ramírez</h3>
+                        <p>"Estoy muy impresionado con la precisión de EcoCrop para detectar plagas en mis cultivos. ¡Es una herramienta indispensable para cualquier agricultor!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial3.jpg" alt="Testimonio 3">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Carlos Martínez</h3>
+                        <p>"Gracias a EcoCrop, he logrado aumentar la productividad de mis cultivos y reducir los costos de control de plagas. ¡Una herramienta indispensable para cualquier agricultor!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial4.jpg" alt="Testimonio 4">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Laura Torres</h3>
+                        <p>"Desde que uso EcoCrop, he visto una gran mejora en la salud de mis plantas. ¡Es una gran inversión!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial5.jpg" alt="Testimonio 5">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Fernando García</h3>
+                        <p>"La capacidad de EcoCrop para prever problemas en mis cultivos es impresionante. No puedo estar más satisfecho."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial6.jpg" alt="Testimonio 6">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Claudia Medina</h3>
+                        <p>"Con EcoCrop he podido optimizar mis recursos y obtener mejores resultados en mi producción."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial7.jpg" alt="Testimonio 7">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Juan Pérez</h3>
+                        <p>"No sabía cuánto podría ayudarme una app hasta que probé EcoCrop. ¡Es un cambio total!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/images/testimonials/testimonial8.jpg" alt="Testimonio 8">
+                    </div>
+                    <div class="carousel-text">
+                        <h3>Patricia Jiménez</h3>
+                        <p>"Recomiendo EcoCrop a todos mis colegas. Es fundamental para el éxito de cualquier agricultor."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>    
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contact" class="contact-container">
+        <h2 class="title-contact">Contáctanos</h2>
+        <div class="content-contact">
+            <div class="form-contact-container">
+                <span class="form-contact-title">Enviar un mensaje</span>
+                <form class="form">
+                    <div class="group">
+                        <input placeholder="" type="text" required="">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="group">
+                        <input placeholder="" type="email" id="email" name="email" required="">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="group">
+                        <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                        <label for="comment">Mensaje</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="image-contact">
+                <img src="assets/images/contact/contact.png" alt="Contacto">
+            </div>    
+        </div>
+    </section>
+
+    <!-- ALIANZAS CON ASOCIACIONES -->
+    <section class="partners-container">
+        <h2 class="partners-title">Nuestras Alianzas</h2>
+        <!-- Logos de las asociaciones -->
+        <div class="partners-content">
+            <div class="partners">
+                <img src="assets/images/partners/partner1.png" alt="Alianza 1">
+            </div>
+            <div class="partners">
+                <img src="assets/images/partners/partner2.png" alt="Alianza 2">
+            </div>
+            <div class="partners">
+                <img src="assets/images/partners/partner3.png" alt="Alianza 3">
+            </div>
+            <div class="partners">
+                <img src="assets/images/partners/partner4.png" alt="Alianza 4">
+            </div>
+            <div class="partners">
+                <img src="assets/images/partners/partner5.png" alt="Alianza 5">
+            </div>
+            <div class="partners">
+                <img src="assets/images/partners/partner6.png" alt="Alianza 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 1ª Columna -->
+            <div class="footer-column">
+                <img src="assets/images/logos/logo-app.png" alt="Logo Musify" class="footer-logo">
+                <p><a href="mailto:contacto@ecocrop.com?subject=Consulta&body=Hola,%tengo20%una20%consuklta."><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i> contacto@ecocrop.com</a></p>
+                <p><a href="tel:978777386"><i class="fa-solid fa-phone" style="padding-right: 5px;"></i> +51 978 777 386</a></p>
+            </div>
+            <!-- 2ª Columna -->
+            <div class="footer-column">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#howDoesItWork">Cómo funciona</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <!-- 3ª Columna -->
+            <div class="footer-column">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Reportar un problema</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <!-- 4ª Columna -->
+            <div class="footer-column">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="#">Ver productos</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Clima</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+            <!-- 5ª Columna -->
+            <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <ul class="social-media">
+                    <li><a href="https://es-la.facebook.com/" target="_blank" class="lk-fa"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://x.com/" target="_blank" class="lk-tw"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                    <li><a href="https://instagram.com/" target="_blank" class="lk-ig"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://youtube.com/" target="_blank" class="lk-yt"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Todos los derechos reservados a Green Sprout Innovations</p>
+        </div>
+    </footer>
+
+</body>
+
+    <script src="js/index.js"></script>
+
+</html>

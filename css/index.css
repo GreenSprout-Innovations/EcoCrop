@@ -1,0 +1,1054 @@
+/* 
+ESTILOS GENERALES 
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* 
+BARRA DE NAVEGACIÓN 
+*/
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.12);
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.navbar-logo,
+.navbar-button {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo-img {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-title {
+    font-weight: 900;
+    font-size: 25px;
+    color: #1a584b;
+    margin: 10px;
+}
+
+.navbar-links {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #888;
+    padding: 25px 40px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+/* Estilo del icono del menú desplegable */
+.navbar-link .fa-caret-down {
+    margin-left: 5px;
+}
+
+/* Submenú de Servicios */
+.navbar-sublinks {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-sublinks li {
+    display: block;
+    margin: 20px 0;
+}
+
+.navbar-sublink {
+    color: #888;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+.navbar-sublink:hover {
+    color: #1a584b;
+}
+
+/* Mostrar el submenú al hacer hover */
+.navbar-links li:hover .navbar-sublinks {
+    display: block;
+}
+
+/* Efecto hover en enlaces de navegación */
+.navbar-link:hover,
+.navbar-link.active {
+    background-color: #1a584b;
+    color: #fff;
+}
+
+/* Estilo del botón "Únete" */
+.navbar-join-button {
+    background-color: transparent;
+    border: 2px solid #1a584b;
+    padding: 15px 40px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.navbar-join-button:hover {
+    background-color: #1a584b;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* 
+SECCIÓN
+    INICIO 
+*/
+
+.home-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.home-content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #1a584b;
+    margin-bottom: 15px;
+}
+
+.home-content span {
+    font-weight: 600;
+}
+
+.home-content p {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #888;
+    margin: 20px 0;
+}
+
+.start-button {
+    background-color: #1a584b;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.start-button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1a584b;
+    display: block;
+    transition: transform 0.3s;
+    position: absolute;
+    z-index: -1;
+    transform: translate(6px, 4px);
+}
+
+.start-button:hover::after {
+    transform: translate(0, 0);
+}
+
+.start-button:hover {
+    transform: translate(5px, 5px);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.start-button span {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.home-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.home-image video {
+    width: 100%;
+    height: auto;
+}
+
+/* 
+SECCIÓN
+    CÓMO FUNCIONA
+*/
+
+.how-function-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    flex-direction: column;
+}
+
+.how-function-title {
+    font-size: 40px;
+    color: #1a584b;
+    font-weight: 800;
+}
+
+.how-function-content {
+    width: 90%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step-container {
+    width: 20%;
+    max-height: 400px;
+    min-height: 300px; 
+    background-color: #fff; 
+    margin: 25px 0; 
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.01); 
+    position: relative; 
+    transition: 0.3s; 
+}
+
+.step-container:hover {
+    transform: translateY(-20px); 
+    box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2); 
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #1a584b; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    left: -25px; 
+}
+
+.step-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 50%; 
+    padding: 10px; 
+}
+
+.step-info .step-title {
+    color: #1a584b; 
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+.step-info p {
+    padding-top: 10px; 
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 5px; 
+}
+
+.step-container:hover .step-info p {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.step-image {
+    width: 100%;
+    height: 200px; 
+    margin-top: 10px; 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 0 0 5px 5px; 
+}
+
+/* Imágenes específicas para cada paso */
+.step-one .step-image {
+    background-image: url('../assets/images/how/step1.jpg');
+}
+
+.step-two .step-image {
+    background-image: url('../assets/images/how/step2.jpg');
+}
+
+.step-three .step-image {
+    background-image: url('../assets/images/how/step3.jpg');
+}
+
+.step-four .step-image {
+    background-image: url('../assets/images/how/step4.jpg');
+}
+/* 
+SECCIÓN 
+    SERVICIOS
+*/
+
+.services-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../assets/images/services/wallpaper_service.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-services {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-services {
+    font-size: 60px;
+    color: #fff;
+}
+
+.services-content {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card-service {
+    width: 20%;
+    min-height: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: relative;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.card-service::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: 0.5s;    
+    z-index: -500;
+    border-radius: 10px;
+}
+
+.card-service:hover::after{
+    top: 0px;
+    right: 0px;
+}
+
+.card-service:hover {
+    transform: translateY(-20px);
+}
+
+.triangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* forma de triángulo */
+    background-color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.triangle-bottom {
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0); /* forma de triángulo invertido */
+}
+
+.card-service:hover .triangle {
+    width: 100px;
+    height: 100px;
+}
+
+.triangle .fa-solid {
+    color: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+}
+
+.info-service {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-service h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.info-service p {
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center; 
+}
+
+.info-service a {
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #1a584b;
+    font-weight: 700;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.info-service a:hover .fa-arrow-right {
+    margin-left: 20px;
+}
+
+/*
+SECCIÓN
+    SOBRE NOSOTROS
+*/
+
+ .about-container {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 40px;
+    color: #1a584b;
+    font-weight: 800;
+}
+
+.about-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-images {
+    width: 40%;
+}
+
+.about-image-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 60px;
+    left: calc(50% - 300px);
+}
+
+.about-image-card {
+    width: 400px;
+    height: 400px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 1px #0001;
+    transition: background-image 0.5s ease, transform 0.4s ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: imageTransition 5s infinite linear;
+}
+
+/* Anima las imágenes para crear un efecto de desplazamiento */
+@keyframes imageTransition {
+    0% { transform: translateY(-20px); left: 20px; }
+    25% { transform: translateY(-40px); left: 30px; }
+    50% { transform: translateY(-60px); left: 40px; }
+    75% { transform: translateY(-40px); left: 30px; }
+    100% { transform: translateY(-20px); left: 20px; }
+}
+
+/* Configuración específica de imágenes de fondo para cada tarjeta */
+.about-image-card.card1 {
+    background-image: url('../assets/images/about/column1.jpg');
+    animation-delay: 0s;
+}
+.about-image-card.card2 {
+    background-image: url('../assets/images/about/column2.jpg');
+    animation-delay: 1s;
+}
+.about-image-card.card3 {
+    background-image: url('../assets/images/about/column3.jpg');
+    animation-delay: 2s;
+}
+.about-image-card.card4 {
+    background-image: url('../assets/images/about/column4.jpg');
+    animation-delay: 3s;
+}
+.about-image-card.card5 {
+    background-image: url('../assets/images/about/column5.jpg');
+    animation-delay: 4s;
+}
+.about-image-card.card6 {
+    background-image: url('../assets/images/about/column6.jpg');
+    animation-delay: 5s;
+}
+
+/* Cambia la imagen de fondo al pasar el mouse sobre cada tarjeta */
+.about-image-card.card1:hover { background-image: url('../assets/images/about/man_farmer.jpg'); }
+.about-image-card.card2:hover { background-image: url('../assets/images/about/female_farmer.jpg'); }
+.about-image-card.card3:hover { background-image: url('../assets/images/about/man_farmer2.jpg'); }
+.about-image-card.card4:hover { background-image: url('../assets/images/about/female_farmer2.jpg'); }
+.about-image-card.card5:hover { background-image: url('../assets/images/about/man_farmer3.jpg'); background-position: left; }
+.about-image-card.card6:hover { background-image: url('../assets/images/about/female_farmer3.jpg'); }
+
+.about-image-card:not(:first-child) {
+    margin-left: -10px;
+}
+
+.about-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p {
+    color: #888;
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/*
+SECCIÓN
+    CARRUSEL DE TESTIMONIOS
+*/
+
+.testimonials-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials-title{
+    font-size: 40px;
+    color: #1a584b;
+    font-weight: 800;
+}
+
+.carousel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.carousel-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-item{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 1px #0001;
+    transition: .5s;
+    position: relative;
+}
+
+.carousel-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 7px 1px #0005;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.carousel-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.carousel-text h3{
+    font-size: 30px;
+    color: #1a584b;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.carousel-text p{
+    color: #888;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.carousel-controls{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.prev-button,
+.next-button{
+    background-color: #1a584b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: .3s;
+}
+
+.prev-button:hover,
+.next-button:hover{
+    background-color: #fff;
+    color: #1a584b;
+}
+
+.prev-button .fa-chevron-left,
+.next-button .fa-chevron-right{
+    font-size: 20px;
+}
+
+/*
+SECCIÓN
+    CONTACTO
+*/
+
+.contact-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.title-contact{
+    font-size: 40px;
+    color: #1a584b;
+    font-weight: 800;
+}
+
+.content-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.form-contact-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 0px;
+    margin: 0px 20px;
+    width: 40%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 3px 1px #0001;
+    transition: 0.5s;
+}
+
+
+.form-contact-container::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    background-color: #1a584b;
+    transition: .5s;
+}
+
+.form-contact-container::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -200px;
+    right: -200px;
+    background-color: #1a584b;
+    transition: .5s;
+    z-index: 410;
+}
+
+.form-contact-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 7px 1px #0002;
+}
+
+.form-contact-container:hover::after{
+    top: -100px;
+    left: -100px;
+}
+
+.form-contact-container:hover::before{
+    bottom: -100px;
+    right: -100px;
+}
+
+.image-contact{
+    width: 60%;
+    height: auto;
+}
+
+.form-contact-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #1a584b;
+}
+
+.form-contact-container .form {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+}
+
+.form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+    border-color: #1a584b;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #1a584b;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form .group textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form button {
+    background-color: #1a584b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+}
+
+.image-contact img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 
+SECCIÓN
+    ALIANZAS CON ASOCIACIONES
+*/
+
+.partners-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.partners-title{
+    font-size: 40px;
+    color: #1a584b;
+    font-weight: 800;
+}
+
+.partners-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.partners{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.partners img{
+    width: 100px;
+    filter: grayscale(100%) opacity(0.5) drop-shadow(0px 0px 5px #0005);
+} 
+
+/*
+SECCIÓN
+    PIE DE PÁGINA
+*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    color: #0008;
+}
+
+.footer-column p{
+    padding-top: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: #0009;
+    user-select: none;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #0007;
+}
+
+.footer-column a:hover{
+    text-decoration: underline;
+}
+
+.footer-column .social-media a:hover{
+    text-decoration: none;
+}
+
+.fa-brands{
+    padding-right: 8px;
+    transition: .2s;
+}
+
+.lk-fa:hover{
+    color: #0b86ee;
+}
+
+.lk-ig:hover{
+    color: rgb(214, 112, 254);
+}
+
+.lk-tw:hover{
+    color: #888;
+}
+
+.lk-yt:hover{
+    color: rgb(242, 61, 61);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    color: #0007;
+    user-select: none;
+}
