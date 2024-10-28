@@ -38,7 +38,7 @@ EcoCrop promueve un uso eficiente y sostenible de los recursos agrícolas, ayuda
 - JavaScript
 
 ## Licencia
-Este proyecto está bajo la [Licencia MIT](LICENSE).
+Este proyecto está bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
 
 ---
 
