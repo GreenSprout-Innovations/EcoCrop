@@ -31,6 +31,28 @@ Bienvenido al repositorio de la **Landing Page** de nuestra aplicación **EcoCro
 
 EcoCrop promueve un uso eficiente y sostenible de los recursos agrícolas, ayudando a los agricultores a gestionar sus cultivos de manera más efectiva y responsable.
 
+## Segmentos objetivos
+### Agricultores
+Este segmento incluye a pequeños y medianos agricultores que buscan optimizar su producción agrícola mediante la utilización de tecnología avanzada para el control de plagas.
+
+**Características demográficas**
+- **Rango de edad:** 25 - 60 años
+- **Geografía:** Zonas rurales y periubanas en América Latina, con énfasis en áreas donde la agricultura es una actividad económica importante.
+
+### Cooperativas y asociaciones agrícolas
+Este segmento se refiere a organizaciones que agrupan a múltiples agricultores y están interesadas en adoptar tecnologías innovadoras para mejorar la eficiencia y sostenibilidad de sus operaciones.
+
+**Características demográficas**
+- **Tipo de organización:** Cooperativas agrícolas, asociaciones de agricultores.
+- **Localización:** América Latina, con un enfoque en regiones con un alto nivel de organización agrícola.
+
+### Empresas de insumos agrícolas
+Este grupo incluye a empresas que proveen productos y servicios para el control de plagas y que buscan integrar tecnología en sus ofertas para proporcionar soluciones más efectivas y sostenibles.
+
+**Características demográficas:**
+- **Tipo de empresa:** Proveedores de insumos agrícolas, especialmente aquellos enfocados en el control de plagas.
+- **Localización:** América Latina, con presencia en mercados agrícolas emergentes.
+
 ## Tecnologías Utilizadas
 
 - HTML

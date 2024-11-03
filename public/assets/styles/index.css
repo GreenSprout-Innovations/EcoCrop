@@ -372,19 +372,19 @@ SECCIÓN
 
 /* Imágenes específicas para cada paso */
 .step-one .step-image {
-    background-image: url('../assets/images/how/step1.jpg');
+    background-image: url('../images/how/step1.jpg');
 }
 
 .step-two .step-image {
-    background-image: url('../assets/images/how/step2.jpg');
+    background-image: url('../images/how/step2.jpg');
 }
 
 .step-three .step-image {
-    background-image: url('../assets/images/how/step3.jpg');
+    background-image: url('../images/how/step3.jpg');
 }
 
 .step-four .step-image {
-    background-image: url('../assets/images/how/step4.jpg');
+    background-image: url('../images/how/step4.jpg');
 }
 /* 
 SECCIÓN 
@@ -396,7 +396,7 @@ SECCIÓN
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url('../assets/images/services/wallpaper_service.jpg');
+    background-image: url('../images/services/wallpaper_service.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -597,37 +597,37 @@ SECCIÓN
 
 /* Configuración específica de imágenes de fondo para cada tarjeta */
 .about-image-card.card1 {
-    background-image: url('../assets/images/about/column1.jpg');
+    background-image: url('../images/about/column1.jpg');
     animation-delay: 0s;
 }
 .about-image-card.card2 {
-    background-image: url('../assets/images/about/column2.jpg');
+    background-image: url('../images/about/column2.jpg');
     animation-delay: 1s;
 }
 .about-image-card.card3 {
-    background-image: url('../assets/images/about/column3.jpg');
+    background-image: url('../images/about/column3.jpg');
     animation-delay: 2s;
 }
 .about-image-card.card4 {
-    background-image: url('../assets/images/about/column4.jpg');
+    background-image: url('../images/about/column4.jpg');
     animation-delay: 3s;
 }
 .about-image-card.card5 {
-    background-image: url('../assets/images/about/column5.jpg');
+    background-image: url('../images/about/column5.jpg');
     animation-delay: 4s;
 }
 .about-image-card.card6 {
-    background-image: url('../assets/images/about/column6.jpg');
+    background-image: url('../images/about/column6.jpg');
     animation-delay: 5s;
 }
 
 /* Cambia la imagen de fondo al pasar el mouse sobre cada tarjeta */
-.about-image-card.card1:hover { background-image: url('../assets/images/about/man_farmer.jpg'); }
-.about-image-card.card2:hover { background-image: url('../assets/images/about/female_farmer.jpg'); }
-.about-image-card.card3:hover { background-image: url('../assets/images/about/man_farmer2.jpg'); }
-.about-image-card.card4:hover { background-image: url('../assets/images/about/female_farmer2.jpg'); }
-.about-image-card.card5:hover { background-image: url('../assets/images/about/man_farmer3.jpg'); background-position: left; }
-.about-image-card.card6:hover { background-image: url('../assets/images/about/female_farmer3.jpg'); }
+.about-image-card.card1:hover { background-image: url('../images/about/man_farmer.jpg'); }
+.about-image-card.card2:hover { background-image: url('../images/about/female_farmer.jpg'); }
+.about-image-card.card3:hover { background-image: url('../images/about/man_farmer2.jpg'); }
+.about-image-card.card4:hover { background-image: url('../images/about/female_farmer2.jpg'); }
+.about-image-card.card5:hover { background-image: url('../images/about/man_farmer3.jpg'); background-position: left; }
+.about-image-card.card6:hover { background-image: url('../images/about/female_farmer3.jpg'); }
 
 .about-image-card:not(:first-child) {
     margin-left: -10px;
